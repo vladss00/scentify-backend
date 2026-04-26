@@ -6,7 +6,13 @@ const app = express();
 const PORT = 3000;
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: [
+    'http://localhost:8100',
+    'http://localhost:4200',
+    'https://lighthearted-cendol-0ebe97.netlify.app'
+  ]
+}));
 app.use(bodyParser.json({ limit: '10mb' }));
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
 
