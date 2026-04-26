@@ -10,7 +10,8 @@ app.use(cors({
   origin: [
     'http://localhost:8100',
     'http://localhost:4200',
-    'https://lighthearted-cendol-0ebe97.netlify.app'
+    'https://lighthearted-cendol-0ebe97.netlify.app',
+    'https://classy-hamster-6a3b89.netlify.app'
   ]
 }));
 app.use(bodyParser.json({ limit: '10mb' }));
